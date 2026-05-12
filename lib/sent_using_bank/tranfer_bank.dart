@@ -67,7 +67,7 @@ class _TranferToFriendState extends State<TranferBank> {
                             height: 10,
                           ),
                           Text(
-                            "Rp 24.321.900",
+                            "SGD 24,321,900",
                             style: TextStyle(fontSize: 23, color: Colors.white),
                           ),
                         ],
@@ -149,7 +149,7 @@ class _TranferToFriendState extends State<TranferBank> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                'Rp',
+                                'SGD',
                                 style: TextStyle(
                                     fontSize: 32, fontWeight: FontWeight.bold),
                               ),

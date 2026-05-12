@@ -37,7 +37,7 @@ class _SubmitedSlipState extends State<SubmitedSlip> {
                 width: 320,
                 height: 450,
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Background,
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: Column(
@@ -55,7 +55,7 @@ class _SubmitedSlipState extends State<SubmitedSlip> {
                     const Text("Your transaction was successful"),
                     const SizedBox(height: 20),
                     Text(
-                      'Rp ${parsedAmount.toStringAsFixed(2)}', // Display formatted amount
+                      'SGD ${parsedAmount.toStringAsFixed(2)}', // Display formatted amount
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 25,
@@ -87,7 +87,7 @@ class _SubmitedSlipState extends State<SubmitedSlip> {
                             style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
                           ),
                           Text(
-                            'Rp ${parsedAmount.toStringAsFixed(2)}',
+                            'SGD ${parsedAmount.toStringAsFixed(2)}',
                             style: const TextStyle(fontSize: 14),
                           ),
                         ],
@@ -155,7 +155,7 @@ class _SubmitedSlipState extends State<SubmitedSlip> {
                             style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
                           ),
                           Text(
-                            "Rp 2.0",
+                            "SGD 2.0",
                             style: TextStyle(fontSize: 14),
                           ),
                         ],
@@ -172,7 +172,7 @@ class _SubmitedSlipState extends State<SubmitedSlip> {
                             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: btntxt),
                           ),
                           Text(
-                            'Rp ${totalPayment.toStringAsFixed(2)}',
+                            'SGD ${totalPayment.toStringAsFixed(2)}',
                             style: const TextStyle(fontSize: 18, color: btntxt),
                           ),
                         ],
@@ -205,7 +205,7 @@ class _SubmitedSlipState extends State<SubmitedSlip> {
               },
               child: const Text('Back to Home', style: TextStyle(color: btntxt)),
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white,
+                backgroundColor: Background,
                 padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 100),
               ),
             ),

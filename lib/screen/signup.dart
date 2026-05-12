@@ -21,14 +21,14 @@ class _SignupState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Background,
       body: SafeArea(
           child: SingleChildScrollView(
             child: Container(
               color: btntxt,
               child: Container(
                 decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Background,
                     borderRadius: BorderRadius.only(
                         topRight: Radius.circular(30), topLeft: Radius.circular(30))),
                 margin: EdgeInsets.only(top: 80),
@@ -37,7 +37,15 @@ class _SignupState extends State<Signup> {
                     Padding(
                       padding: const EdgeInsets.only(left: 30, right: 30, top: 20),
                       child: Center(
-                        child: Image.asset('assets/image/logo.png', width: 300,)
+                        child: RichText(
+                          text: TextSpan(
+                            style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+                            children: [
+                              TextSpan(text: 'GBNX ', style: TextStyle(color: btn)),
+                              TextSpan(text: 'Digital App', style: TextStyle(color: Colors.black)),
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                     SizedBox(
@@ -181,65 +189,6 @@ class _SignupState extends State<Signup> {
                                 fontSize: 13,
                                 color: Color(0xFF4a4a4a)),
                           )),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10),
-                      child: TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            "Or continue with",
-                            style: TextStyle(
-                                fontFamily: 'pppinsbold', fontSize: 13, color: btntxt),
-                          )),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade100,
-                            borderRadius: BorderRadius.circular(12.0),
-                          ),
-                          child: IconButton(
-                            icon: Icon(
-                              Icons.facebook,
-                              color: Colors.blue,
-                              size: 35,
-                            ),
-                            onPressed: () {
-                              // Facebook login logic
-                            },
-                          ),
-                        ),
-                        SizedBox(width: 20),
-                        Container(
-                            decoration: BoxDecoration(
-                              color: Colors.grey.shade100,
-                              borderRadius: BorderRadius.circular(12.0),
-                            ),
-                            child: Image.asset(
-                              'assets/image/google.png',
-                              width: 50,
-                              height: 50,
-                            )),
-                        SizedBox(width: 20),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade100,
-                            borderRadius: BorderRadius.circular(12.0),
-                          ),
-                          child: IconButton(
-                            icon: Icon(
-                              Icons.apple,
-                              color: Colors.black,
-                              size: 35,
-                            ),
-                            onPressed: () {
-                              // Apple login logic
-                            },
-                          ),
-                        ),
-                      ],
                     ),
                   ],
                 ),

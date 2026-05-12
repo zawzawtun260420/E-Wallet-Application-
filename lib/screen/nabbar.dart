@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projectapp/constant/colours.dart';
+import 'package:projectapp/screen/dashboard.dart';
 import 'package:projectapp/screen/home.dart';
 
 class Nabbar extends StatefulWidget {
@@ -17,6 +18,8 @@ class _NabbarState extends State<Nabbar> {
     return Scaffold(
       body: getCurrentView(),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Background,
+        type: BottomNavigationBarType.fixed,
         currentIndex: currentvalue,
         onTap: (value){
           setState(() {
@@ -26,8 +29,8 @@ class _NabbarState extends State<Nabbar> {
         selectedItemColor: btntxt,
         unselectedItemColor: Colors.grey,
         items: [
+          BottomNavigationBarItem(icon: Icon(Icons.dashboard_outlined),label: "Dashboard"),
           BottomNavigationBarItem(icon: Icon(Icons.compare_arrows),label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.reorder),label: "Report"),
           BottomNavigationBarItem(icon: Icon(Icons.qr_code),label: "QR Code"),
           BottomNavigationBarItem(icon: Icon(Icons.history),label: "History"),
           BottomNavigationBarItem(icon: Icon(Icons.person),label: "Profile"),
@@ -38,14 +41,14 @@ class _NabbarState extends State<Nabbar> {
 
   getCurrentView() {
     if(currentvalue  == 0){
-      return Home();
+      return Dashboard();
     }else if(currentvalue  == 1){
-      // return chatVeiw();
+      return Home();
     } else if(currentvalue  == 2){
       // return Signup();
     } else {
       return Container(
-        child: Center(child: Text("No Fav", style: TextStyle(fontSize: 20),)),
+        child: Center(child: Text("Coming Soon", style: TextStyle(fontSize: 20),)),
       );
     }
 

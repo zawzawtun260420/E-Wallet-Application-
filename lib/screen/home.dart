@@ -67,8 +67,8 @@ class _HomeState extends State<Home> {
   String formatAmount(int amount) {
     // Convert amount to currency format
     String formatted = amount.abs().toString().replaceAllMapped(
-        RegExp(r'(\d)(?=(\d{3})+$)'), (Match m) => '${m[1]}.');
-    return amount < 0 ? '-Rp $formatted' : 'Rp $formatted';
+        RegExp(r'(\d)(?=(\d{3})+$)'), (Match m) => '${m[1]},');
+    return amount < 0 ? '-SGD $formatted' : 'SGD $formatted';
   }
 
   @override
@@ -97,15 +97,20 @@ class _HomeState extends State<Home> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Image.asset(
-                              'assets/image/logo-in.png',
-                              height: 30,
+                            RichText(
+                              text: TextSpan(
+                                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                children: [
+                                  TextSpan(text: 'GBNX ', style: TextStyle(color: Colors.white)),
+                                  TextSpan(text: 'Digital App', style: TextStyle(color: Colors.white)),
+                                ],
+                              ),
                             ),
                             Container(
                                 width: 130,
                                 height: 40,
                                 decoration: BoxDecoration(
-                                    color: Colors.white,
+                                    color: Background,
                                     borderRadius: BorderRadius.circular(20)),
                                 child: Center(
                                     child: Row(
@@ -138,7 +143,7 @@ class _HomeState extends State<Home> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("Rp 24.321.900",
+                            Text("SGD 24,321,900",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 25,
@@ -161,7 +166,7 @@ class _HomeState extends State<Home> {
                         child: Container(
                             height: 50,
                             decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: Background,
                               borderRadius: BorderRadius.vertical(
                                   top: Radius.elliptical(300, 40)),
                             ))),
@@ -175,7 +180,7 @@ class _HomeState extends State<Home> {
                           child: Container(
                             height: 50,
                             decoration: BoxDecoration(
-                                color: Colors.white,
+                                color: Background,
                                 boxShadow: [
                                   BoxShadow(
                                     color: Colors.grey.withOpacity(0.5),
@@ -210,7 +215,7 @@ class _HomeState extends State<Home> {
                                     SizedBox(
                                       height: 7,
                                     ),
-                                    Text("Tranfer")
+                                    Text("Transfer")
                                   ],
                                 ),
                                 Column(
@@ -231,7 +236,7 @@ class _HomeState extends State<Home> {
                                     SizedBox(
                                       height: 7,
                                     ),
-                                    Text("withdraw")
+                                    Text("Withdraw")
                                   ],
                                 ),
                                 Column(
@@ -327,7 +332,7 @@ class _HomeState extends State<Home> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Lastest Transaction",
+                    "Latest Transaction",
                     style: GoogleFonts.openSans(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   ),

@@ -10,6 +10,8 @@ import 'package:projectapp/sent_using_contact_number/tranfer_to_friend.dart';
 
 
 
+import 'package:projectapp/constant/colours.dart';
+
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -29,6 +31,10 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.light,
+        scaffoldBackgroundColor: Background,
+      ),
       home: Login(),
     );
   }

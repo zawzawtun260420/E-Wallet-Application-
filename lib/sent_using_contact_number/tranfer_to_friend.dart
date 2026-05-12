@@ -69,7 +69,7 @@ class _TranferToFriendState extends State<TranferToFriend> {
                             height: 10,
                           ),
                           Text(
-                            "Rp 24.321.900",
+                            "SGD 24,321,900",
                             style: TextStyle(fontSize: 23, color: Colors.white),
                           ),
                         ],
@@ -78,7 +78,7 @@ class _TranferToFriendState extends State<TranferToFriend> {
                         width: 100,
                         height: 40,
                         decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: Background,
                             borderRadius: BorderRadius.circular(20)),
                         child: Row(
                           children: [
@@ -106,7 +106,7 @@ class _TranferToFriendState extends State<TranferToFriend> {
                 Container(
                   width: _screenWidth,
                   decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: Background,
                       borderRadius: BorderRadius.only(
                           topRight: Radius.circular(30),
                           topLeft: Radius.circular(30))),
@@ -157,7 +157,7 @@ class _TranferToFriendState extends State<TranferToFriend> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                'Rp',
+                                'SGD',
                                 style: TextStyle(
                                     fontSize: 32, fontWeight: FontWeight.bold),
                               ),
