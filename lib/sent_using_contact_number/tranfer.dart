@@ -61,9 +61,15 @@ class _TranferState extends State<Tranfer> {
     ];
     String formatAmount(int amount) {
       // Format the amount to Indonesian Rupiah format
+<<<<<<< HEAD
       return 'Rp ${amount.toString().replaceAllMapped(
             RegExp(r'(\d)(?=(\d{3})+$)'),
             (Match m) => '${m[1]}.',
+=======
+      return 'SGD ${amount.toString().replaceAllMapped(
+            RegExp(r'(\d)(?=(\d{3})+$)'),
+            (Match m) => '${m[1]},',
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
           )}';
     }
 

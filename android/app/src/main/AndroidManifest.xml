@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
+<<<<<<< HEAD
         android:label="projectapp"
+=======
+        android:label="GBNX Digital App"
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

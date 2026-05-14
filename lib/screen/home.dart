@@ -23,56 +23,88 @@ class _HomeState extends State<Home> {
     {
       'title': 'Transfer',
       'date': 'Yesterday · 19:12',
+<<<<<<< HEAD
       'amount': -60.00,
       'currency': 'SGD',
+=======
+      'amount': -600000,
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
       'icon': Icons.swap_horiz,
       'color': Colors.red
     },
     {
       'title': 'Top Up',
       'date': 'May 29, 2023 · 19:12',
+<<<<<<< HEAD
       'amount': 1500.00,
       'currency': 'USD',
+=======
+      'amount': 60000,
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
       'icon': Icons.account_balance_wallet,
       'color': Colors.green
     },
     {
       'title': 'Internet',
       'date': 'May 16, 2023 · 17:34',
+<<<<<<< HEAD
       'amount': -35.50,
       'currency': 'SGD',
+=======
+      'amount': -350000,
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
       'icon': Icons.wifi,
       'color': Colors.red
     },
     {
       'title': 'Work history',
       'date': 'May 13, 2022 · 17:94',
+<<<<<<< HEAD
       'amount': 450.00,
       'currency': 'EUR',
+=======
+      'amount': 450000,
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
       'icon': Icons.work_history,
       'color': Colors.green
     },
     {
       'title': 'Bills',
       'date': 'May 13, 2022 · 17:94',
+<<<<<<< HEAD
       'amount': -67.20,
       'currency': 'SGD',
+=======
+      'amount': -670000,
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
       'icon': Icons.work_history,
       'color': Colors.red
     },
     {
       'title': 'Balance',
       'date': 'May 13, 2022 · 17:94',
+<<<<<<< HEAD
       'amount': 450.00,
       'currency': 'GBP',
+=======
+      'amount': 450000,
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
       'icon': Icons.balance,
       'color': Colors.green
     },
   ];
 
+<<<<<<< HEAD
   String formatAmount(double amount, String currency) {
     String formatted = amount.abs().toStringAsFixed(2);
     return amount < 0 ? '-$currency $formatted' : '$currency $formatted';
+=======
+  String formatAmount(int amount) {
+    // Convert amount to currency format
+    String formatted = amount.abs().toString().replaceAllMapped(
+        RegExp(r'(\d)(?=(\d{3})+$)'), (Match m) => '${m[1]},');
+    return amount < 0 ? '-SGD $formatted' : 'SGD $formatted';
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
   }
 
   @override
@@ -101,15 +133,30 @@ class _HomeState extends State<Home> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
+<<<<<<< HEAD
                             Image.asset(
                               'assets/image/logo-in.png',
                               height: 30,
+=======
+                            RichText(
+                              text: TextSpan(
+                                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                children: [
+                                  TextSpan(text: 'GBNX ', style: TextStyle(color: Colors.white)),
+                                  TextSpan(text: 'Digital App', style: TextStyle(color: Colors.white)),
+                                ],
+                              ),
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                             ),
                             Container(
                                 width: 130,
                                 height: 40,
                                 decoration: BoxDecoration(
+<<<<<<< HEAD
                                     color: Colors.white,
+=======
+                                    color: Background,
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                                     borderRadius: BorderRadius.circular(20)),
                                 child: Center(
                                     child: Row(
@@ -142,7 +189,11 @@ class _HomeState extends State<Home> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+<<<<<<< HEAD
                             Text("SGD 24,321.90",
+=======
+                            Text("SGD 24,321,900",
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 25,
@@ -165,7 +216,11 @@ class _HomeState extends State<Home> {
                         child: Container(
                             height: 50,
                             decoration: BoxDecoration(
+<<<<<<< HEAD
                               color: Colors.white,
+=======
+                              color: Background,
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                               borderRadius: BorderRadius.vertical(
                                   top: Radius.elliptical(300, 40)),
                             ))),
@@ -179,7 +234,11 @@ class _HomeState extends State<Home> {
                           child: Container(
                             height: 50,
                             decoration: BoxDecoration(
+<<<<<<< HEAD
                                 color: Colors.white,
+=======
+                                color: Background,
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                                 boxShadow: [
                                   BoxShadow(
                                     color: Colors.grey.withOpacity(0.5),
@@ -214,7 +273,11 @@ class _HomeState extends State<Home> {
                                     SizedBox(
                                       height: 7,
                                     ),
+<<<<<<< HEAD
                                     Text("Tranfer")
+=======
+                                    Text("Transfer")
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                                   ],
                                 ),
                                 Column(
@@ -331,7 +394,11 @@ class _HomeState extends State<Home> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
+<<<<<<< HEAD
                     "Lastest Transaction",
+=======
+                    "Latest Transaction",
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                     style: GoogleFonts.openSans(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   ),
@@ -368,7 +435,11 @@ class _HomeState extends State<Home> {
                       style: TextStyle(fontWeight: FontWeight.bold)),
                   subtitle: Text(transaction['date']),
                   trailing: Text(
+<<<<<<< HEAD
                     formatAmount(transaction['amount'], transaction['currency']),
+=======
+                    formatAmount(transaction['amount']),
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                     style: TextStyle(
                       color: transaction['color'],
                       fontWeight: FontWeight.bold,

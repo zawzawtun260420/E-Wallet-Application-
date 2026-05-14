@@ -69,7 +69,11 @@ class _TranferToFriendState extends State<TranferToFriend> {
                             height: 10,
                           ),
                           Text(
+<<<<<<< HEAD
                             "Rp 24.321.900",
+=======
+                            "SGD 24,321,900",
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                             style: TextStyle(fontSize: 23, color: Colors.white),
                           ),
                         ],
@@ -78,7 +82,11 @@ class _TranferToFriendState extends State<TranferToFriend> {
                         width: 100,
                         height: 40,
                         decoration: BoxDecoration(
+<<<<<<< HEAD
                             color: Colors.white,
+=======
+                            color: Background,
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                             borderRadius: BorderRadius.circular(20)),
                         child: Row(
                           children: [
@@ -106,7 +114,11 @@ class _TranferToFriendState extends State<TranferToFriend> {
                 Container(
                   width: _screenWidth,
                   decoration: BoxDecoration(
+<<<<<<< HEAD
                       color: Colors.white,
+=======
+                      color: Background,
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                       borderRadius: BorderRadius.only(
                           topRight: Radius.circular(30),
                           topLeft: Radius.circular(30))),
@@ -157,7 +169,11 @@ class _TranferToFriendState extends State<TranferToFriend> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
+<<<<<<< HEAD
                                 'Rp',
+=======
+                                'SGD',
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                                 style: TextStyle(
                                     fontSize: 32, fontWeight: FontWeight.bold),
                               ),

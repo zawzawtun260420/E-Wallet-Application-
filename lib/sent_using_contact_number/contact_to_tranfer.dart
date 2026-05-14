@@ -91,7 +91,11 @@ class _ContactToTranferState extends State<ContactToTranfer> {
                             height: 10,
                           ),
                           Text(
+<<<<<<< HEAD
                             "Rp 24.321.900",
+=======
+                            "SGD 24,321,900",
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                             style: TextStyle(fontSize: 23, color: Colors.white),
                           ),
                         ],
@@ -169,7 +173,11 @@ class _ContactToTranferState extends State<ContactToTranfer> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
+<<<<<<< HEAD
                               'Rp',
+=======
+                              'SGD',
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                               style: TextStyle(
                                   fontSize: 32, fontWeight: FontWeight.bold),
                             ),

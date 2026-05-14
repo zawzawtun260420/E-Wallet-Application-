@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:projectapp/constant/colours.dart';
+<<<<<<< HEAD
 import 'package:projectapp/screen/navbar.dart';
+=======
+import 'package:projectapp/screen/nabbar.dart';
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
 
 class SubmitedToFriend extends StatefulWidget {
   final String amountbank;
@@ -34,7 +38,11 @@ class _SubmitedToFriendState extends State<SubmitedToFriend> {
                 width: 320,
                 height: 450,
                 decoration: BoxDecoration(
+<<<<<<< HEAD
                   color: Colors.white,
+=======
+                  color: Background,
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: Column(
@@ -52,7 +60,11 @@ class _SubmitedToFriendState extends State<SubmitedToFriend> {
                     const Text("Your transaction was successful"),
                     const SizedBox(height: 20),
                     Text(
+<<<<<<< HEAD
                       'Rp ${parsedAmount.toStringAsFixed(2)}', // Display formatted amount
+=======
+                      'SGD ${parsedAmount.toStringAsFixed(2)}', // Display formatted amount
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 25,
@@ -84,7 +96,11 @@ class _SubmitedToFriendState extends State<SubmitedToFriend> {
                             style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
                           ),
                           Text(
+<<<<<<< HEAD
                             'Rp ${parsedAmount.toStringAsFixed(2)}',
+=======
+                            'SGD ${parsedAmount.toStringAsFixed(2)}',
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                             style: const TextStyle(fontSize: 14),
                           ),
                         ],
@@ -152,7 +168,11 @@ class _SubmitedToFriendState extends State<SubmitedToFriend> {
                             style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
                           ),
                           Text(
+<<<<<<< HEAD
                             "Rp 2.0",
+=======
+                            "SGD 2.0",
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                             style: TextStyle(fontSize: 14),
                           ),
                         ],
@@ -169,7 +189,11 @@ class _SubmitedToFriendState extends State<SubmitedToFriend> {
                             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: btntxt),
                           ),
                           Text(
+<<<<<<< HEAD
                             'Rp ${totalPayment.toStringAsFixed(2)}',
+=======
+                            'SGD ${totalPayment.toStringAsFixed(2)}',
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                             style: const TextStyle(fontSize: 18, color: btntxt),
                           ),
                         ],
@@ -198,11 +222,19 @@ class _SubmitedToFriendState extends State<SubmitedToFriend> {
             const SizedBox(height: 15),
             ElevatedButton(
               onPressed: () {
+<<<<<<< HEAD
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>Navbar()));
               },
               child: const Text('Back to Home', style: TextStyle(color: btntxt)),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.white,
+=======
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Nabbar()));
+              },
+              child: const Text('Back to Home', style: TextStyle(color: btntxt)),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Background,
+>>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
                 padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 100),
               ),
             ),
