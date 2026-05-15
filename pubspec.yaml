@@ -38,7 +38,6 @@ dependencies:
   firebase_core: ^3.8.1
   firebase_auth: ^5.3.4
   cloud_firestore: ^5.5.1
-<<<<<<< HEAD
   google_fonts: ^6.3.0
   fl_chart: ^0.69.0
   intl: ^0.19.0
@@ -54,10 +53,6 @@ dependencies:
 
   # Serialization
   json_annotation: ^4.9.0
-=======
-  google_fonts: ^6.2.1
-  intl: ^0.18.0
->>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
 
 dev_dependencies:
   flutter_test:
@@ -70,14 +65,12 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^4.0.0
 
-<<<<<<< HEAD
   # Code generation
   build_runner: ^2.4.13
   json_serializable: ^6.8.0
   retrofit_generator: ^9.1.5
 
-=======
->>>>>>> dad7861bff05e73639116e2d7911d08ec2d778c2
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
